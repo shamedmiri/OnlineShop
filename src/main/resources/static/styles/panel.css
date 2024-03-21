@@ -1,0 +1,46 @@
+.color-red{
+    color: #eb4435;
+}
+.color-blue{
+    color: #4285f3;
+}
+.color-green{
+    color: #33a852;
+}
+.color-yellow{
+    color: #fbbd03;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.side-nav{
+    background-color: #34495e;
+    color: #fff;
+    height: 100%;
+}
+.side-nav ul{
+    list-style: none;
+    padding: 10px;
+}
+.side-nav a{
+    text-decoration: none;
+    color: #fff;
+}
+.side-nav li{
+   padding: 7px;
+}
+.side-nav-active{
+    background-color: rgb(72, 88, 110);
+}
+.side-nav li:hover{
+    background-color: #8399b0;
+}
+.panel-header{
+    background-color: #fff;
+    border: 1px solid #dfd;
+    padding: 10px;
+}
+.main-container{
+    background-color: #fff;
+    min-height: 500px;
+}

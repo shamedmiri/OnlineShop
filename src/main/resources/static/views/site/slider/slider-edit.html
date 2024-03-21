@@ -1,0 +1,55 @@
+<div ng-controller="sliderEditCtrl">
+    <div class="container p-3">
+        <div class="card">
+            <div class="card-header">
+                edit a  slider
+                <a ng-click="changeMenu('slider-list')" class="btn btn-primary btn-sm float-end">return</a>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col">
+                        <a class="btn btn-sm btn-primary float-end">Edit</a>
+                        <br>
+                        <br>
+                        <row class="row">
+                            <div class="col-3"></div>
+                            <div class="col-6 login-box-holder">
+                                <div class="mb-3">
+                                    <label for="title" class="form-label">Title</label>
+                                    <input type="text" class="form-control" id="title" ng-model="data.title">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="link" class="form-label">Link</label>
+                                    <input type="text" class="form-control" id="link" ng-model="data.link">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="enable" class="form-label">Enable</label>
+                                    <select class="form-control" id="enable" ng-model="data.enable">
+                                        <option value="true">Yes</option>
+                                        <option value="false">No</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="description" class="form-label">Description</label>
+                                    <textarea class="form-control" id="description" ng-model="data.description">
+                                    </textarea>
+                                </div>
+                                <div ng-include="'/views/utils/fileuploader.html'"></div>
+                                <br/>
+                                <br/>
+                                <div class="mb-3">
+                                    <label for="image" class="form-label">image</label>
+                                    <input type="text" readonly="readonly" disabled="disabled" class="form-control" id="image" ng-model="data.image">
+                                </div>
+                                <button type="submit" class="btn btn-primary" ng-click="editData()">Update</button>
+                            </div>
+                            <div class="col-3"></div>
+                        </row>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
